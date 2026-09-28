@@ -60,8 +60,8 @@ Step 6 – Configure Service Principal Name (SPN)<br/><br/>
 Configured a Service Principal Name (SPN) for the SQL service account to associate the account with a Kerberos-enabled SQL service within the domain. Registered MSSQLSvc/CA-DC-01.Myforest.com:1433 to the svc_sql account and verified the configuration using the setspn command to prepare the account for the controlled Kerberoasting scenario performed later in the project: <br/>
 <img src="Step%206.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
-Step 7 – Configure User and Group Permissions<br/><br/>
-Configure permissions and group memberships for the newly created accounts to establish appropriate access levels and create a more realistic domain environment: <br/>
+Step 7 – Configure and Test User and Group Permissions<br/><br/>
+Created departmental shared folders for IT, Finance, and Human Resources and configured NTFS permissions using their corresponding Active Directory security groups. Disabled inherited permissions to restrict access to authorized departmental groups while retaining administrative and system access. Tested the configuration from the Windows 11 workstation using the bmiller account, verifying that a Finance user could create files within the Finance share while access to the IT share was denied: <br/>
 <img src="Step%207.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
 Step 8 – Review and Configure Group Policy<br/><br/>
