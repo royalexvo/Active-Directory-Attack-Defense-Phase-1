@@ -56,8 +56,8 @@ Step 5 – Create and Configure Service Accounts<br/><br/>
 Created a dedicated SQL service account within the Service Accounts organizational unit to support the controlled Kerberoasting scenario performed later in the project. The account was configured with a non-expiring password to simulate a traditional service account configuration that will later be evaluated and hardened: <br/>
 <img src="Step%205.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
-Step 6 – Configure Service Principal Names (SPNs)<br/><br/>
-Configure and review Service Principal Names (SPNs) associated with the lab service accounts to prepare the Active Directory environment for the controlled Kerberoasting scenario performed in the next phase: <br/>
+Step 6 – Configure Service Principal Name (SPN)<br/><br/>
+Configured a Service Principal Name (SPN) for the SQL service account to associate the account with a Kerberos-enabled SQL service within the domain. Registered MSSQLSvc/CA-DC-01.Myforest.com:1433 to the svc_sql account and verified the configuration using the setspn command to prepare the account for the controlled Kerberoasting scenario performed later in the project: <br/>
 <img src="Step%206.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
 Step 7 – Configure User and Group Permissions<br/><br/>
