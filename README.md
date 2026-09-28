@@ -64,8 +64,8 @@ Step 7 – Configure and Test User and Group Permissions<br/><br/>
 Created departmental shared folders for IT, Finance, and Human Resources and configured NTFS permissions using their corresponding Active Directory security groups. Disabled inherited permissions to restrict access to authorized departmental groups while retaining administrative and system access. Tested the configuration from the Windows 11 workstation using the bmiller account, verifying that a Finance user could create files within the Finance share while access to the IT share was denied: <br/>
 <img src="Step%207.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
-Step 8 – Review and Configure Group Policy<br/><br/>
-Review the existing Group Policy configuration and configure policies required for the Active Directory security environment, including settings that will later be evaluated during the attack and defense scenarios: <br/>
+Step 8 – Review Domain Password and Account Lockout Policies<br/><br/>
+Reviewed the existing domain Group Policy configuration to establish the security baseline for later attack and defense scenarios. Verified password requirements including a 12-character minimum length and password complexity requirements, along with an account lockout threshold of three invalid logon attempts, a 30-minute counter reset period, and a 360-minute lockout duration. These settings will be used as the baseline when evaluating password spraying activity later in the project: <br/>
 <img src="Step%208.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
 Step 9 – Configure Windows Security Auditing<br/><br/>
