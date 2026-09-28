@@ -37,7 +37,7 @@ This phase establishes the Active Directory environment that will be used for th
 
 <p align="center">
 Step 1 – Review the Existing Active Directory Environment<br/><br/>
-Opened Active Directory Users and Computers on the Windows Server 2022 domain controller to review the existing domain configuration before expanding the environment. The domain already contains existing users, groups, and Active Directory infrastructure that will serve as the foundation for the attack and defense scenarios performed throughout the project: <br/>
+Opened Active Directory Users and Computers on the Windows Server 2022 domain controller to review the existing domain configuration before expanding the environment. The domain already contains existing users, groups, and Active Directory infrastructure from my labs that will serve as the foundation for the attack and defense scenarios performed throughout the project: <br/>
 <img src="STEP-1-SCREENSHOT-LINK" height="80%" width="80%" alt="Project Steps"/>
 <br/>
 Step 2 – Create the Organizational Unit Structure<br/><br/>
