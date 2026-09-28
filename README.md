@@ -76,7 +76,7 @@ Step 10 – Verify Windows Security Event Logging<br/><br/>
 Generated domain authentication activity from the Windows 11 workstation and reviewed the Security log on the domain controller to verify that the configured audit policies were recording authentication events. Located Event ID 4624 for the bmiller domain account, confirming that successful authentication activity was being captured and could be reviewed for later security investigations: <br/>
 <img src="Step%2010.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
-Step 11 – Verify the Completed Active Directory Security Environment<br/><br/>
-Review the completed Active Directory configuration and verify that the users, groups, service accounts, policies, auditing settings, workstation, and network connectivity required for the upcoming attack and defense scenarios are functioning correctly: <br/>
+Step 11 – Verify Active Directory Environment Configuration<br/><br/>
+Performed a final verification of the Active Directory environment before beginning the attack and defense phases of the project. Confirmed the domain users, security groups, organizational units, service account, registered Service Principal Name (SPN), and domain user authentication from the Windows 11 workstation. This established a functional baseline environment for the Kerberoasting and password spraying scenarios performed in later phases: <br/>
 <img src="Step%2011.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
