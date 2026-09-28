@@ -41,7 +41,7 @@ Opened Active Directory Users and Computers on the Windows Server 2022 domain co
 <img src="STEP-1-SCREENSHOT-LINK" height="80%" width="80%" alt="Project Steps"/>
 <br/>
 Step 2 – Create the Organizational Unit Structure<br/><br/>
-Create Organizational Units (OUs) to organize the domain users, groups, service accounts, and computers that will be used throughout the Active Directory attack and defense environment: <br/>
+Created Organizational Units (OUs) to organize the domain users, groups, service accounts, and computers that will be used throughout the Active Directory attack and defense environment: <br/>
 <img src="Step%202.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
 Step 3 – Create Domain User Accounts<br/><br/>
