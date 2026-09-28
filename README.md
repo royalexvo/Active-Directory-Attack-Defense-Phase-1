@@ -45,7 +45,7 @@ Created Organizational Units (OUs) to organize the domain users, groups, service
 <img src="Step%202.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
 Step 3 – Create Domain User Accounts<br/><br/>
-Create additional domain user accounts to establish a more realistic Active Directory environment and provide accounts that can be used during later attack and defense scenarios: <br/>
+Created six domain user accounts within the Domain Users organizational unit to establish a more realistic Active Directory environment for later attack and defense scenarios. Several test accounts were intentionally configured with the same predictable password to support the controlled password spraying scenario performed later in the project: <br/>
 <img src="Step%203.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
 Step 4 – Create and Configure Security Groups<br/><br/>
