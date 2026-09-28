@@ -4,7 +4,7 @@
 
 This phase documents the expansion and security configuration of an existing Active Directory environment using Windows Server 2022 and Windows 11 virtual machines. The goal of this phase is to prepare the domain environment for controlled Active Directory attack and defense scenarios.
 
-<br />In this phase, the following topics will be covered:
+<br />In this phase, the following tasks were completed::
 - <b>Domain user creation</b>
 - <b>Organizational Units (OUs)</b>
 - <b>Security groups</b>
@@ -18,13 +18,15 @@ This phase documents the expansion and security configuration of an existing Act
 This phase establishes the Active Directory environment that will be used for the Kerberoasting and password spraying attack and defense scenarios in later phases.
 <br />
 
-<h2>Languages and Utilities Used</h2>
+<h2>Tools and Utilities Used</h2>
 
 - <b>PowerShell</b>
 - <b>Command Prompt (CMD)</b>
 - <b>Active Directory Domain Services (AD DS)</b>
 - <b>Windows Event Viewer</b>
 - <b>Oracle VirtualBox</b>
+- <b>Group Policy Management</b>
+- <b>Active Directory Users and Computers (ADUC)</b>
 
 <h2>Environments Used</h2>
 
@@ -73,7 +75,7 @@ Configured Advanced Audit Policy settings through Group Policy to capture securi
 <img src="https://github.com/royalexvo/Active-Directory-Attack-Defense-Phase-1/blob/main/Step9.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
 Step 10 – Verify Windows Security Event Logging<br/><br/>
-Generated domain authentication activity from the Windows 11 workstation and reviewed the Security log on the domain controller to verify that the configured audit policies were recording authentication events. Located Event ID 4624 for the bmiller domain account, confirming that successful authentication activity was being captured and could be reviewed for later security investigations: <br/>
+Generated domain authentication activity from the Windows 11 workstation and reviewed the Security log on the domain controller to verify that the configured audit policies were recording authentication events. Confirmed Event ID 4624 for successful domain logon activity and Event ID 4769 for Kerberos service ticket requests, verifying that the environment was capturing the security events needed for later attack investigation: <br/>
 <img src="https://github.com/royalexvo/Active-Directory-Attack-Defense-Phase-1/blob/main/Step10.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
 Step 11 – Verify Active Directory Environment Configuration<br/><br/>
