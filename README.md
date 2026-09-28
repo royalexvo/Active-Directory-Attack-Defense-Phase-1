@@ -68,8 +68,8 @@ Step 8 – Review Domain Password and Account Lockout Policies<br/><br/>
 Reviewed the existing domain Group Policy configuration to establish the security baseline for later attack and defense scenarios. Verified password requirements including a 12-character minimum length and password complexity requirements, along with an account lockout threshold of three invalid logon attempts, a 30-minute counter reset period, and a 360-minute lockout duration. These settings will be used as the baseline when evaluating password spraying activity later in the project: <br/>
 <img src="Step%208.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
-Step 9 – Configure Windows Security Auditing<br/><br/>
-Configure Windows security auditing to generate the authentication, account, and Kerberos-related security events required to investigate activity performed during later attack simulations: <br/>
+Step 9 – Configure Security Auditing<br/><br/>
+Configured Advanced Audit Policy settings through Group Policy to capture security events needed for later attack investigation. Enabled success and failure auditing for Kerberos authentication, Kerberos service ticket operations, user account management, security group management, and logon activity. Applied the updated Group Policy and verified the effective audit configuration using the auditpol command: <br/>
 <img src="Step%209.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
 Step 10 – Verify Domain Workstation and Network Configuration<br/><br/>
