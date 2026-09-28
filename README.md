@@ -53,7 +53,7 @@ Created Global security groups for IT, Finance, and Human Resources and assigned
 <img src="Step%204.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
 Step 5 – Create and Configure Service Accounts<br/><br/>
-Create dedicated service accounts that will be used to demonstrate how service accounts operate within Active Directory and support the Kerberos security scenarios performed later in the project: <br/>
+Created a dedicated SQL service account within the Service Accounts organizational unit to support the controlled Kerberoasting scenario performed later in the project. The account was configured with a non-expiring password to simulate a traditional service account configuration that will later be evaluated and hardened: <br/>
 <img src="Step%205.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
 Step 6 – Configure Service Principal Names (SPNs)<br/><br/>
