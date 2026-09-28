@@ -49,7 +49,7 @@ Created six domain user accounts within the Domain Users organizational unit to 
 <img src="Step%203.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
 Step 4 – Create and Configure Security Groups<br/><br/>
-Create security groups and assign domain users to the appropriate groups to establish role-based access and organize permissions within the Active Directory environment: <br/>
+Created Global security groups for IT, Finance, and Human Resources and assigned the domain users to groups based on their organizational roles. Using security groups allows access and permissions to be managed by role rather than individually for each user: <br/>
 <img src="Step%204.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
 Step 5 – Create and Configure Service Accounts<br/><br/>
