@@ -38,45 +38,45 @@ This phase establishes the Active Directory environment that will be used for th
 <p align="center">
 Step 1 – Review the Existing Active Directory Environment<br/><br/>
 Opened Active Directory Users and Computers on the Windows Server 2022 domain controller to review the existing domain configuration before expanding the environment. The domain already contains existing users, groups, and Active Directory infrastructure from my labs that will serve as the foundation for the attack and defense scenarios performed throughout the project: <br/>
-<img src="STEP-1-SCREENSHOT-LINK" height="80%" width="80%" alt="Project Steps"/>
+<img src="https://github.com/royalexvo/Active-Directory-Attack-Defense-Phase-1/blob/main/Step1.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
 Step 2 – Create the Organizational Unit Structure<br/><br/>
 Created Organizational Units (OUs) to organize the domain users, groups, service accounts, and computers that will be used throughout the Active Directory attack and defense environment: <br/>
-<img src="Step%202.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
+<img src="https://github.com/royalexvo/Active-Directory-Attack-Defense-Phase-1/blob/main/Step2.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
 Step 3 – Create Domain User Accounts<br/><br/>
 Created six domain user accounts within the Domain Users organizational unit to establish a more realistic Active Directory environment for later attack and defense scenarios. Several test accounts were intentionally configured with the same predictable password to support the controlled password spraying scenario performed later in the project: <br/>
-<img src="Step%203.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
+<img src="https://github.com/royalexvo/Active-Directory-Attack-Defense-Phase-1/blob/main/Step3.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
 Step 4 – Create and Configure Security Groups<br/><br/>
 Created Global security groups for IT, Finance, and Human Resources and assigned the domain users to groups based on their organizational roles. Using security groups allows access and permissions to be managed by role rather than individually for each user: <br/>
-<img src="Step%204.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
+<img src="https://github.com/royalexvo/Active-Directory-Attack-Defense-Phase-1/blob/main/Step4.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
 Step 5 – Create and Configure Service Accounts<br/><br/>
 Created a dedicated SQL service account within the Service Accounts organizational unit to support the controlled Kerberoasting scenario performed later in the project. The account was configured with a non-expiring password to simulate a traditional service account configuration that will later be evaluated and hardened: <br/>
-<img src="Step%205.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
+<img src="https://github.com/royalexvo/Active-Directory-Attack-Defense-Phase-1/blob/main/Step5.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
 Step 6 – Configure Service Principal Name (SPN)<br/><br/>
 Configured a Service Principal Name (SPN) for the SQL service account to associate the account with a Kerberos-enabled SQL service within the domain. Registered MSSQLSvc/CA-DC-01.Myforest.com:1433 to the svc_sql account and verified the configuration using the setspn command to prepare the account for the controlled Kerberoasting scenario performed later in the project: <br/>
-<img src="Step%206.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
+<img src="https://github.com/royalexvo/Active-Directory-Attack-Defense-Phase-1/blob/main/Step6.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
 Step 7 – Configure and Test User and Group Permissions<br/><br/>
 Created departmental shared folders for IT, Finance, and Human Resources and configured NTFS permissions using their corresponding Active Directory security groups. Disabled inherited permissions to restrict access to authorized departmental groups while retaining administrative and system access. Tested the configuration from the Windows 11 workstation using the bmiller account, verifying that a Finance user could create files within the Finance share while access to the IT share was denied: <br/>
-<img src="Step%207.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
+<img src="https://github.com/royalexvo/Active-Directory-Attack-Defense-Phase-1/blob/main/Step7.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
 Step 8 – Review Domain Password and Account Lockout Policies<br/><br/>
 Reviewed the existing domain Group Policy configuration to establish the security baseline for later attack and defense scenarios. Verified password requirements including a 12-character minimum length and password complexity requirements, along with an account lockout threshold of three invalid logon attempts, a 30-minute counter reset period, and a 360-minute lockout duration. These settings will be used as the baseline when evaluating password spraying activity later in the project: <br/>
-<img src="Step%208.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
+<img src="https://github.com/royalexvo/Active-Directory-Attack-Defense-Phase-1/blob/main/Step8.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
 Step 9 – Configure Security Auditing<br/><br/>
 Configured Advanced Audit Policy settings through Group Policy to capture security events needed for later attack investigation. Enabled success and failure auditing for Kerberos authentication, Kerberos service ticket operations, user account management, security group management, and logon activity. Applied the updated Group Policy and verified the effective audit configuration using the auditpol command: <br/>
-<img src="Step%209.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
+<img src="https://github.com/royalexvo/Active-Directory-Attack-Defense-Phase-1/blob/main/Step9.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
 Step 10 – Verify Windows Security Event Logging<br/><br/>
 Generated domain authentication activity from the Windows 11 workstation and reviewed the Security log on the domain controller to verify that the configured audit policies were recording authentication events. Located Event ID 4624 for the bmiller domain account, confirming that successful authentication activity was being captured and could be reviewed for later security investigations: <br/>
-<img src="Step%2010.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
+<img src="https://github.com/royalexvo/Active-Directory-Attack-Defense-Phase-1/blob/main/Step10.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
 Step 11 – Verify Active Directory Environment Configuration<br/><br/>
 Performed a final verification of the Active Directory environment before beginning the attack and defense phases of the project. Confirmed the domain users, security groups, organizational units, service account, registered Service Principal Name (SPN), and domain user authentication from the Windows 11 workstation. This established a functional baseline environment for the Kerberoasting and password spraying scenarios performed in later phases: <br/>
-<img src="Step%2011.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
+<img src="https://github.com/royalexvo/Active-Directory-Attack-Defense-Phase-1/blob/main/Step11.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
