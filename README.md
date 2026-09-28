@@ -72,8 +72,8 @@ Step 9 – Configure Security Auditing<br/><br/>
 Configured Advanced Audit Policy settings through Group Policy to capture security events needed for later attack investigation. Enabled success and failure auditing for Kerberos authentication, Kerberos service ticket operations, user account management, security group management, and logon activity. Applied the updated Group Policy and verified the effective audit configuration using the auditpol command: <br/>
 <img src="Step%209.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
-Step 10 – Verify Domain Workstation and Network Configuration<br/><br/>
-Verify that the Windows 11 workstation remains connected to the Active Directory domain and can communicate with the domain controller before beginning the attack simulations: <br/>
+Step 10 – Verify Windows Security Event Logging<br/><br/>
+Generated domain authentication activity from the Windows 11 workstation and reviewed the Security log on the domain controller to verify that the configured audit policies were recording authentication events. Located Event ID 4624 for the bmiller domain account, confirming that successful authentication activity was being captured and could be reviewed for later security investigations: <br/>
 <img src="Step%2010.png?raw=true" height="80%" width="80%" alt="Project Steps"/>
 <br/>
 Step 11 – Verify the Completed Active Directory Security Environment<br/><br/>
