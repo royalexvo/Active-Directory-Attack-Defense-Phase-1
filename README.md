@@ -16,7 +16,6 @@ This phase documents the expansion and security configuration of an existing Act
 - <b>Network configuration</b>
 - <b>Security and auditing configuration</b>
 This phase establishes the Active Directory environment that will be used for the Kerberoasting and password spraying attack and defense scenarios in later phases.
-<br />
 
 <h2>Tools and Utilities Used</h2>
 
