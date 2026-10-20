@@ -4,7 +4,6 @@
 <h2>Description</h2>
 
 This phase documents the expansion and security configuration of an existing Active Directory environment using Windows Server 2022 and Windows 11 virtual machines. The goal of this phase is to prepare the domain environment for controlled Active Directory attack and defense scenarios.
-
 <br />In this phase, the following tasks were completed:
 - <b>Domain user creation</b>
 - <b>Organizational Units (OUs)</b>
